@@ -6,6 +6,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.1.0] - 2023-11-14
+### Added
+- Tagging of git branch
+### Changed
+- Upgraded to helm-maven-plugin version 5.0.0
+- Now a helm chart is packaged and pushed as an artifact during the commit-stage build
+- Now the helm chart is pulled before deploying during the integration-test-stage build
+- Consolidated all Maven plugins
+- Upgraded all Maven plugins
+- Upgraded to Spring Boot 3.1.5 and upgraded all related dependencies
+- Upgraded cnj-common-observability-spring to version 1.2.0
+- Removed dependency on cnj-common-test-jakarta by using actual model in tests
+- Removed some SonarQube issues
+
 ## [2.0.0] - 2023-06-09
 ### Changed
 - moved to new AWS CodeBuild build pipeline
