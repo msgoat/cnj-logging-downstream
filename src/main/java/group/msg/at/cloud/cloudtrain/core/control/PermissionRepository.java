@@ -1,10 +1,10 @@
 package group.msg.at.cloud.cloudtrain.core.control;
 
 import group.msg.at.cloud.cloudtrain.core.entity.Permission;
-import org.springframework.stereotype.Service;
-
 import jakarta.annotation.PostConstruct;
 import jakarta.validation.constraints.NotNull;
+import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 import java.util.List;
 

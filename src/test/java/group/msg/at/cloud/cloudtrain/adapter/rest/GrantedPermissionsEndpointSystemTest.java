@@ -37,7 +37,7 @@ public class GrantedPermissionsEndpointSystemTest {
 
     @Test
     void getWithProjectNameReturnsExpectedPermissions() {
-        GrantedPermission[] permissions = given().log().body(true).auth().oauth2(fixture.getAccessToken())
+        GrantedPermission[] permissions = given().auth().oauth2(fixture.getAccessToken())
                 .accept(ContentType.JSON)
                 .get("api/v1/grantedPermissions")
                 .then()
